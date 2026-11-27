@@ -65,6 +65,11 @@ fires after a window already put in the same turn — add «⟦без окна: 
    (65bc639, prebuild RC=0, 9 stub cases with a negative); deployed by me 23:46:43 (cart 200, no console errors); its eyes on a
    filled cart are its own next move; 6-3 waits for the store's slug. Core defect on the way: market's `describe:publish` → 404
    «not a born element» (the core's registry copy) — into 865.
+   23:49 fractera.ai's agent (Roma's file 1749): the store needs repo Fractera/fractera-test-paid-image-starter, public, tag v0.1.0 =
+   a copy of fractera-test-image-starter v0.1.0 (af896f0), only the passport's name/description. Ready in the workshop: a246fba
+   (tag v0.1.0 local); window 70687e7f = `bash logs/release-paid-image-starter.sh` (Roma's key). Then: report repo/tag/commit to
+   Roma as a file for fractera.ai → the store's 4-18 catalogue entry → the slug to market for 6-3. Their stripe door exists
+   (`/api/stripe-checkout`, test status door, webhook); the store builds 4-14…4-17; 4-19 waits Roma's TEST keys there.
    The earlier proposal (1720), kept for its detail: a third test starter (the image copy at $1) added by the store's side on
    fractera.ai; Stripe in TEST mode on fractera.ai; market adds «Оплатить» to the cart (the core's payer window with the checkout link
    exists, 862-4); the test buyer on aifa.dev pays with a test card; then live keys only by Roma's window. Payment only on the site,
