@@ -49,7 +49,8 @@ fires after a window already put in the same turn — add «⟦без окна: 
   NOT changed (Roma 1684: natives need no market).
 
 **OPEN NOW:**
-1. **864 to the server** — Roma's window 66de613f (put 23:35): `bash logs/push-864.sh` (fork → Fractera main), then on aifa.dev «Проверить снова» (me) →
+1. **864 to the server** — PUSHED by Roma 23:45: Fractera main = 714bb5cc (eb14d9c9..714bb5cc). My Chrome is not signed in on
+   architect.aifa.dev, so window a603a25e asks Roma for both presses: «Проверить снова» →
    «Обновить сборку ядра» (his). The walled-bot gate (memory): a walled element's bot on aifa.dev answers «привет» before AND after.
    Live proof: `curl -sI https://market.aifa.dev/` → 2xx/3xx with nothing typed on the server (the heal at the build's end); then
    market v0.1.1 there. Server-wall review of the batch: it touches nginx/certs/the reach card/serve's build end — no Telegram, agent
