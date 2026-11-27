@@ -50,7 +50,7 @@ fires after a window already put in the same turn — add «⟦без окна: 
 
 **OPEN NOW:**
 1. **864 to the server** — PUSHED by Roma 23:45: Fractera main = 714bb5cc (eb14d9c9..714bb5cc). My Chrome is not signed in on
-   architect.aifa.dev, so window a603a25e asks Roma for both presses: «Проверить снова» →
+   architect.aifa.dev, so window a603a25e asks Roma for both presses (pressed; the core went into its build 23:46:35): «Проверить снова» →
    «Обновить сборку ядра» (his). The walled-bot gate (memory): a walled element's bot on aifa.dev answers «привет» before AND after.
    Live proof: `curl -sI https://market.aifa.dev/` → 2xx/3xx with nothing typed on the server (the heal at the build's end); then
    market v0.1.1 there. Server-wall review of the batch: it touches nginx/certs/the reach card/serve's build end — no Telegram, agent
@@ -61,7 +61,10 @@ fires after a window already put in the same turn — add «⟦без окна: 
    «Ждём оплату», «Готово» → order → «Купленные»); the store's task sent to Roma as a file (Telegram 1744) to pass to fractera.ai; the
    buyer is this Mac (no server update for the first paid test). Waits: market's report, the store's slug and its test order.
    23:38 market asked to `ls` the core's scripts/market-purchase.test.mjs (my task had pointed it there — wrong: the boundary) →
-   denied with the doors' shapes (purchase, order, orders) for a stub inside its own folder.
+   denied with the doors' shapes (purchase, order, orders) for a stub inside its own folder. 23:45 market reported step 6 coded
+   (65bc639, prebuild RC=0, 9 stub cases with a negative); deployed by me 23:46:43 (cart 200, no console errors); its eyes on a
+   filled cart are its own next move; 6-3 waits for the store's slug. Core defect on the way: market's `describe:publish` → 404
+   «not a born element» (the core's registry copy) — into 865.
    The earlier proposal (1720), kept for its detail: a third test starter (the image copy at $1) added by the store's side on
    fractera.ai; Stripe in TEST mode on fractera.ai; market adds «Оплатить» to the cart (the core's payer window with the checkout link
    exists, 862-4); the test buyer on aifa.dev pays with a test card; then live keys only by Roma's window. Payment only on the site,
