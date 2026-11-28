@@ -57,7 +57,7 @@ measured from the Mac 2026-11-27 23:17 UTC), port 80 — nginx 503.
 
 | Substep | Result that can be shown |
 |---|---|
-| 864-1 | a required name of an active server domain without a certificate gets one with no command: at every start and the end of every build (`healServerNames` → `name-up.mjs`); the runner asks DNS first and HTTPS after |
+| 864-1 ✓ closed 2026-11-28 (completed-steps/864-1.md: live on aifa.dev 23:52:06) | a required name of an active server domain without a certificate gets one with no command: at every start and the end of every build (`healServerNames` → `name-up.mjs`); the runner asks DNS first and HTTPS after |
 | 864-2 | what is unfinished is said: `server -- domain` prints «не закончено» and `===SERVER_DOMAIN=== unfinished … uncertified <names>`; the element card «Адрес в интернете» on a server says «нет сертификата» and offers «Выпустить сертификат», then follows the run |
 
 Work address: the core (fork `main` → Fractera `main` by Roma's window), one release for both substeps; aifa.dev is the live case.

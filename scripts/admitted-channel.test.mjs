@@ -105,5 +105,7 @@ await t('847: the bot names the element by its name for people (name.json, as th
   assert.equal((src.match(/shortName\(named\(/g) || []).length, 2, 'only personName itself and the line for the main agent (it needs the id) keep the address')
 })
 
-rmSync(tmp, { recursive: true, force: true })
+// ✗ Windows CI 2026-11-28 (run 46084052366): EBUSY — Windows never removes a folder that is the process's working folder; leave it first
+process.chdir(ROOT)
+rmSync(tmp, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 })
 console.log(process.exitCode ? '\n===ADMITTED_CHANNEL_FAILED===' : `\n===ADMITTED_CHANNEL_OK=== ${passed} passed`)

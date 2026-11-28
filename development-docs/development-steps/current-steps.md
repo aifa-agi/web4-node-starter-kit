@@ -7,8 +7,9 @@ long or irreversible operation (before it), a changed next action. A section tha
 history of this file is git (`git log -p -- development-docs/development-steps/current-steps.md`; the last long version before the trim
 is commit `dc95a10c`). How steps are planned, proven and closed — skill `use-development-steps`.
 
-**Active steps:** 864 — a name of an active server domain gets its certificate by itself (plan new-steps/864/, substeps 864-1, 864-2;
-code f7b28fef + 9cd911f0 on the fork, waits Roma's push to Fractera and aifa.dev's update for the live proof). 862 — the Fractera
+**Active steps:** 864 — a name of an active server domain gets its certificate by itself (plan new-steps/864/): 864-1 CLOSED (live on
+aifa.dev: market.aifa.dev HTTPS 200 at 23:52:06, 46 s after the new core d55c9754 started, nothing typed there); 864-2 open — the card's
+«Выпустить сертификат» not yet seen on a screen. 862 — the Fractera
 marketplace (new-steps/862/); next in it: the PAID path (Roma 1737, 23:18: «Следом после этого создавай … покупку элементов. Для этого
 один из элементов сделать платным например один доллар попробуем его покупить через тестовой аккаунт Страйп»). 58 older plans wait in
 new-steps/ — one review with Roma decides each (his word, 1732).
@@ -55,8 +56,8 @@ fires after a window already put in the same turn — add «⟦без окна: 
    Live proof: `curl -sI https://market.aifa.dev/` → 2xx/3xx with nothing typed on the server (the heal at the build's end); then
    market v0.1.1 there. Server-wall review of the batch: it touches nginx/certs/the reach card/serve's build end — no Telegram, agent
    start, Claude home or element folder.
-2. **CI:** Fractera's three-os was red on Windows all day (server-telegram's line patterns vs a CRLF checkout) — fixed in 9cd911f0;
-   read the next run after the push (`gh run list -R Fractera/web4-node-starter-kit -L 3`); a further Windows failure = the next fix.
+2. **CI:** Windows red all day — 9cd911f0 fixed the CRLF patterns (run 46084052366 on 714bb5cc got past them); next stop:
+   admitted-channel's EBUSY (it chdirs into its temp folder) — fixed in the 864-1 closing commit, rides with the next Fractera push.
 3. **Paid path = 862-15 (plan new-steps/862/862-15.md), Roma's yes 1737.** 23:36 market tasked (its step 6: consent line, «Оплатить»,
    «Ждём оплату», «Готово» → order → «Купленные»); the store's task sent to Roma as a file (Telegram 1744) to pass to fractera.ai; the
    buyer is this Mac (no server update for the first paid test). Waits: market's report, the store's slug and its test order.
@@ -67,7 +68,8 @@ fires after a window already put in the same turn — add «⟦без окна: 
    «not a born element» (the core's registry copy) — into 865.
    23:49 fractera.ai's agent (Roma's file 1749): the store needs repo Fractera/fractera-test-paid-image-starter, public, tag v0.1.0 =
    a copy of fractera-test-image-starter v0.1.0 (af896f0), only the passport's name/description. Ready in the workshop: a246fba
-   (tag v0.1.0 local); window 70687e7f = `bash logs/release-paid-image-starter.sh` (Roma's key). Then: report repo/tag/commit to
+   (tag v0.1.0 local). Roma's first run 70687e7f CREATED the repo, the push was refused (git took the keychain's old token without
+   `workflow`; gh's token has it) → script fixed (push via `gh auth git-credential`, this command only) → window 7b4666d7. Then: report repo/tag/commit to
    Roma as a file for fractera.ai → the store's 4-18 catalogue entry → the slug to market for 6-3. Their stripe door exists
    (`/api/stripe-checkout`, test status door, webhook); the store builds 4-14…4-17; 4-19 waits Roma's TEST keys there.
    The earlier proposal (1720), kept for its detail: a third test starter (the image copy at $1) added by the store's side on

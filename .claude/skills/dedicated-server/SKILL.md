@@ -49,6 +49,10 @@ A reinstalled server shows a new key: the page names both fingerprints; the pers
 As the owner at that machine's keyboard (you there, from Telegram): `domain [<name>]` · `dns-check` · `certs` · `check` · `activate` ·
 `deactivate` (the server node's door on loopback), `names` · `dns --ip <IP>` · `nginx [--write]` · `phase`. `npm run server -- domain` alone
 prints every name with its DNS, certificate and HTTPS state. Never tell the person a name works before `check` said so.
+864: a required name of an active domain without a certificate (a name an update gave birth to, a lapsed or deleted one) is healed by
+the node itself at every start and the end of every build (`healServerNames` → `name-up.mjs`; a name failed within the hour waits);
+until then `server -- domain` prints «не закончено: без сертификата — …» and the element's card «Адрес в интернете» offers
+«Выпустить сертификат». Proven live on aifa.dev 2026-11-27 (market.aifa.dev, 46 s after the new core started).
 
 ## Laws
 
